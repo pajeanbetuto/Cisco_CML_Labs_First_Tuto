@@ -1,0 +1,12 @@
+- hosts: all
+  gather_facts: no
+  connection: network_cli
+  tasks:
+    - name: debug
+      debug:
+        msg: "Hello World"
+    - name: show interfaces
+      ios_command:
+        commands:
+          - show ip interface brief
+          - show ip interface statistics
