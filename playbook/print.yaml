@@ -3,4 +3,4 @@
   tasks:
     - name: debug
       debug:
-        msg: "the host {{ ansible_host }} is connected successfully!"
+        msg: "the host {{ ansible_host }} is connected succesfully!"
