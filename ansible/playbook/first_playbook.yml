@@ -9,4 +9,7 @@
         commands:
           - show ip interface brief
           - sh int stat
-
+      register: output
+    - name: show interfaces information
+      debug:
+        msg: "{{output.stdout_lines}}"
