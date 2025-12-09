@@ -1,0 +1,12 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: debug
+      debug:
+        msg: "Hello World {{ansible_host}} is successfully connected"
+    - name: show interfaces information
+      ios_command:
+        commands:
+          - show ip interface brief
+          - sh int stat
+
