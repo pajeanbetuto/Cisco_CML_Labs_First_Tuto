@@ -1,6 +1,0 @@
-- hosts: all
-  gather_facts: no
-  tasks:
-    - name: debug
-      debug:
-        msg: "the host {{ ansible_host }} is connected succesfully!"
